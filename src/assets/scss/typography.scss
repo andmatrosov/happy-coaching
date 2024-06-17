@@ -1,0 +1,54 @@
+.typography {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.size {
+  &_xs {
+    font-size: 12px;
+  }
+
+  &_s {
+    font-size: 16px;
+  }
+
+  &_m {
+    font-size: 18px;
+  }
+
+  &_l {
+    font-size: 24px;
+  }
+
+  &_xl {
+    font-size: 36px;
+  }
+}
+
+@include media-tablet-portrait {
+  .size {
+    &_xs {
+      font-size: 8px;
+    }
+
+    &_s {
+      font-size: 12px;
+    }
+
+    &_m {
+      font-size: 14px;
+    }
+
+    &_l {
+      font-size: 20px;
+    }
+
+    &_xl {
+      font-size: 32px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@include font-face("Kumbh Sans", "KumbhSans/KumbhSans", 1-999, normal);
+
+:root {
+  --color-white: #ffffff;
+  --color-off-white: ##f9fafb;
+  --color-accent-bg: #faf8f6;
+  --color-dark-blue: #333461;
+  --color-brand: ##483d8b;
+  --color-purple-400: #7567ca;
+  --color-purple-200: #c0b9ec;
+  --color-complementary: #21ad96;
+  --color-complementary-200: #d5f7f2;
+  --color-gray-300: #d0d5dd;
+  --color-gray-500: #667085;
+
+  --border-radius-s: 4px;
+  --border-radius-m: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

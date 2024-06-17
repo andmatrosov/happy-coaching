@@ -1,0 +1,40 @@
+// Media queries
+@mixin media-mobile {
+  @media (max-width: 567px) {
+    @content;
+  }
+}
+@mixin media-tablet-portrait {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+@mixin media-tablet-landscape {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+@mixin media-desktop {
+  @media (max-width: 1279px) {
+    @content;
+  }
+}
+
+@mixin media-desktop-large {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// font-face
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+    src:
+      url("@/assets/fonts/#{$file-path}.woff") format("woff"),
+      url("@/assets/fonts/#{$file-path}.woff2") format("woff2");
+    font-display: swap;
+  }
+}
