@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
-import Header from '@/components/Header.vue';
-import Footer from '@/components/Footer.vue';
+import UiHeader from '@/components/UiHeader.vue';
+import UiFooter from '@/components/UiFooter.vue';
 </script>
 
 <template>
-  <Header/>
+  <UiHeader/>
   <RouterView />
 
-  <Footer/>
+  <UiFooter/>
 </template>
 
 <style lang="scss" scoped>
