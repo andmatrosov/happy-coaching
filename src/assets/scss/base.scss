@@ -10,11 +10,15 @@
   --color-purple-200: #c0b9ec;
   --color-complementary: #21ad96;
   --color-complementary-200: #d5f7f2;
+  --color-gray-200: #e4e7ec;
   --color-gray-300: #d0d5dd;
   --color-gray-500: #667085;
+  --color-gray-800: #4a556c;
 
   --border-radius-s: 4px;
   --border-radius-m: 8px;
+
+  --container-padding-x: 15px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +41,8 @@ body {
     background-color 0.5s;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 15px;
+  color: var(--color-dark-blue);
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

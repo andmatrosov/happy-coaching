@@ -1,18 +1,18 @@
 <template>
   <main>
-    <UiOffer waves />
     <UiContainer>
-      Home
+      About
     </UiContainer>
   </main>
 </template>
 
 <script lang="ts" setup>
 import UiContainer from '@/components/shared/UiContainer.vue'
-import UiOffer from '@/components/UiOffer.vue'
 
 
 
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>
