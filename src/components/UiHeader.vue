@@ -1,16 +1,18 @@
 <template>
   <header class="header">
-    <UiContainer class="header__row">
-      <UiLogo />
-      <div class="header__menu">
-        <nav class="header__nav">
-          <ul class="menu__list">
-            <li class="menu__item" v-for="item in menuHeaderItems" :key="item.title">
-              <RouterLink :to="item.path" class="menu__link">{{ item.title }}</RouterLink>
-            </li>
-          </ul>
-          <UiButton type="button">Get your free guide now</UiButton>
-        </nav>
+    <UiContainer>
+      <div class="header__row">
+        <UiLogo />
+        <div class="header__menu">
+          <nav class="header__nav">
+            <ul class="menu__list">
+              <li class="menu__item" v-for="item in menuHeaderItems" :key="item.title">
+                <RouterLink :to="item.path" class="menu__link">{{ item.title }}</RouterLink>
+              </li>
+            </ul>
+            <UiButton type="button">Get your free guide now</UiButton>
+          </nav>
+        </div>
       </div>
     </UiContainer>
   </header>

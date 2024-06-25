@@ -1,7 +1,9 @@
 <template>
 	<section class="offer">
 		<UiContainer class="offer__container">
-			<IconWaves v-if="waves" class="offer__waves" />
+			<div class="offer__waves">
+				<UiIcons name="waves" v-if="waves" />
+			</div>
 			<div class="offer__content">
 				<div class="offer__content-text">
 					<p class="offer__subtitle">I can help you in these patricular areas.</p>
@@ -19,7 +21,7 @@
 				<div class="offer__content-image">
 
 					<div class="offer__decorate-index">
-						<IconTarget />
+						<UiIcons name="target" />
 						<div class="offer__decorate-index__text">
 							<b>100%</b>
 							<p>Success rate this year</p>
@@ -38,8 +40,7 @@
 <script lang="ts" setup>
 import UiContainer from '@/components/shared/UiContainer.vue';
 import UiButton from '@/components/shared/UiButton.vue';
-import IconWaves from '@/components/icons/IconWaves.vue';
-import IconTarget from '@/components/icons/IconTarget.vue';
+import UiIcons from '@/components/icons/UiIcons.vue';
 
 import offerIndex from '@/assets/images/offer/offer-index.png';
 

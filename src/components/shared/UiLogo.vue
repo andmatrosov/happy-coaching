@@ -1,13 +1,13 @@
 <template>
 	<RouterLink to="/" class="logo__link">
-		<IconLogo />
+		<UiIcons name="logo" />
 		<span class="typography size_s bold">Happy Coaching</span>
 	</RouterLink>
 </template>
 
 <script lang="ts" setup>
 import { RouterLink } from 'vue-router';
-import IconLogo from '@/components/icons/IconLogo.vue';
+import UiIcons from '@/components/icons/UiIcons.vue';
 
 </script>
 
@@ -16,8 +16,6 @@ import IconLogo from '@/components/icons/IconLogo.vue';
 	display: flex;
 	align-items: center;
 	gap: 10px;
-
-
 }
 
 @include media-mobile {

@@ -56,7 +56,9 @@
 			<div class="footer__copyright">
 				<div class="footer__copyright-text">
 					<span>Made with a</span>
-					<IconVue class="footer__copyright-icon" />
+					<span class="footer__copyright-icon">
+						<UiIcons name="vue" />
+					</span>
 					<span>by <a href="https://t.me/andrew_deweb" target="_blank">Andrei Matrosov</a></span>
 				</div>
 
@@ -80,7 +82,7 @@ import UiContainer from '@/components/shared/UiContainer.vue';
 import UiButton from '@/components/shared/UiButton.vue';
 import UiLogo from '@/components/shared/UiLogo.vue';
 
-import IconVue from '@/components/icons/IconVue.vue';
+import UiIcons from '@/components/icons/UiIcons.vue';
 import IconsSocial from '@/components/icons/IconsSocial.vue';
 
 import { useMenuStore } from '@/stores/menuStore';
